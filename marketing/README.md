@@ -29,7 +29,8 @@ marketing/
 │   ├── project-catalog.md
 │   ├── agent-briefing-template.md
 │   ├── sample-agent-tasks.md
-│   └── github-setup.md
+│   ├── github-setup.md
+│   └── cursor-account-history.md
 └── .github/
     ├── pull_request_template.md
     └── ISSUE_TEMPLATE/
@@ -56,6 +57,7 @@ marketing/
 6. `docs/github-setup.md` を参考にGitHubリポジトリとして作成する
 7. `.github/ISSUE_TEMPLATE/agent-task.yml` と `.github/ISSUE_TEMPLATE/project-request.yml` を使ってタスクをGitHub Issue化する
 8. `.github/pull_request_template.md` を使ってPull Requestの確認観点をそろえる
+9. `docs/cursor-account-history.md` に、このアカウントで関わったソフト・業務の実例を追記する（講義で実話として話す場合）
 
 ## 運用方針
 
