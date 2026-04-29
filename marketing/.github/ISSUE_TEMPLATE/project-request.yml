@@ -1,0 +1,70 @@
+name: Project Request
+description: 複数成果物や複数関係者を含むプロジェクト依頼
+title: "[Project]: "
+labels:
+  - project
+body:
+  - type: markdown
+    attributes:
+      value: |
+        プロジェクトは、単発タスクより影響範囲が広い任務です。
+        成果物、関係者、確認方法を明確にしてください。
+  - type: input
+    id: project-name
+    attributes:
+      label: プロジェクト名
+      description: 何のプロジェクトかを短く書いてください。
+      placeholder: 例）Cursor社内講義コンテンツ整備
+    validations:
+      required: true
+  - type: dropdown
+    id: project-category
+    attributes:
+      label: プロジェクト分類
+      options:
+        - マーケティング基盤整備
+        - コンテンツ制作支援
+        - 業務改善・自動化
+        - 営業・カスタマーサクセス支援
+        - 社内教育・ナレッジ共有
+    validations:
+      required: true
+  - type: textarea
+    id: objective
+    attributes:
+      label: 目的
+      description: このプロジェクトで達成したいことを書いてください。
+    validations:
+      required: true
+  - type: textarea
+    id: deliverables
+    attributes:
+      label: 成果物
+      description: 作成・更新してほしいものを箇条書きで書いてください。
+      placeholder: |
+        - 講義アウトライン
+        - サンプルIssue
+        - 依頼テンプレート
+    validations:
+      required: true
+  - type: textarea
+    id: stakeholders
+    attributes:
+      label: 関係者・レビュー担当
+      description: 誰が確認するのかを書いてください。
+    validations:
+      required: false
+  - type: textarea
+    id: constraints
+    attributes:
+      label: 制約・注意事項
+      description: 機密情報、ブランドルール、期限、変更禁止範囲などを書いてください。
+    validations:
+      required: false
+  - type: textarea
+    id: acceptance
+    attributes:
+      label: 完了条件
+      description: どの状態になれば完了かを書いてください。
+    validations:
+      required: true
