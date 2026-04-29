@@ -1,0 +1,66 @@
+name: Agent task
+description: Cursorエージェントへ依頼する単発タスク
+title: "[Agent Task]: "
+labels:
+  - agent-task
+body:
+  - type: textarea
+    id: purpose
+    attributes:
+      label: 目的
+      description: 何を達成したいのかを書いてください。
+      placeholder: 例）社内向けCursor講義で使うサンプルタスクを整理したい。
+    validations:
+      required: true
+  - type: textarea
+    id: background
+    attributes:
+      label: 背景
+      description: なぜこの作業が必要なのかを書いてください。
+    validations:
+      required: true
+  - type: dropdown
+    id: category
+    attributes:
+      label: タスク分類
+      options:
+        - 調査・リサーチ
+        - 文章作成・編集
+        - 資料・講義コンテンツ作成
+        - GitHub運用支援
+        - データ整理・分析補助
+        - 業務フロー改善
+        - コード・自動化支援
+    validations:
+      required: true
+  - type: textarea
+    id: request
+    attributes:
+      label: 依頼内容
+      description: エージェントに実行してほしい作業を箇条書きで書いてください。
+      placeholder: |
+        - 既存資料を読み取る
+        - タスクをカテゴリ別に整理する
+        - Markdownで成果物を作成する
+    validations:
+      required: true
+  - type: textarea
+    id: deliverables
+    attributes:
+      label: 成果物
+      description: 完了時に何ができていればよいかを書いてください。
+      placeholder: 例）docs/sample-agent-tasks.md
+    validations:
+      required: true
+  - type: textarea
+    id: constraints
+    attributes:
+      label: 制約
+      description: 守るべきルールや変更してはいけない範囲を書いてください。
+  - type: textarea
+    id: acceptance
+    attributes:
+      label: 確認方法
+      description: 人間が何を見て完了判断するのかを書いてください。
+    validations:
+      required: true
