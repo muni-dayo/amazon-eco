@@ -54,7 +54,8 @@ marketing/
 4. `docs/agent-briefing-template.md` を使って依頼文を作成する
 5. `docs/sample-agent-tasks.md` で講義デモ用の依頼例を確認する
 6. `docs/github-setup.md` を参考にGitHubリポジトリとして作成する
-7. `.github/ISSUE_TEMPLATE/` を使ってタスクをGitHub Issue化する
+7. `.github/ISSUE_TEMPLATE/agent-task.yml` と `.github/ISSUE_TEMPLATE/project-request.yml` を使ってタスクをGitHub Issue化する
+8. `.github/pull_request_template.md` を使ってPull Requestの確認観点をそろえる
 
 ## 運用方針
 
